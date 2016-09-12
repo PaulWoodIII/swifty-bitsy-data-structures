@@ -1,9 +1,6 @@
-import Foundation
 /*:
  # Swifty Bitsy Data Structures
- */
 
-/*:
  Today we're gonna learn all about data structures.
  
  "OOooooOOOooh *soo* exciting" right?
@@ -38,53 +35,34 @@ import Foundation
  be a better choice than the others.
  
  To understand why, let's first talk a bit about algorithms.
- */
 
-/*** ===================================================================== ***\
- ** - ALGORITHMS ---------------------------------------------------------- **
- * ========================================================================= *
- *                                                                           *
- *                        ,--,--.    ,--,--.                                 *
- *   ,----------.        |   |   |  |   |   |            _____               *
- *  |`----------'|       |   |   |  |   |   |           |     |    ,------.  *
- *  |            |       |   |   |  |   |   |      ,--. | o o |   |`------'| *
- *  |            |      ,| +-|-+ |  | +-|-+ |`     |  | |_____|   |        | *
- *  |            | ,:==| | |###|======|###| | |====#==#====#=,,   |        | *
- *  |            | ||   `| +---+ |  | +---+ |'  ,,=#==#====O=``  ,|        | *
- *  |            | ||    |   |   |  |   |   |   ``=#==#====#=====||        | *
- *   `----------'  ||    |   |   |  |   |   |      |__|          `|        | *
- *    | | ``=| |===``    `--,',--`  `--,',--`      /||\            `------'  *
- **   \_/    \_/         / /   \ \  / /   \ \     //||\\           |_|  |_| **
- \*** ===================================================================== ***/
-
-/*:
-  Algorithms is a fancy name for step-by-step sets of operations to be
+ Algorithms is a fancy name for step-by-step sets of operations to be
   performed.
  
-  Data structures are implemented with algorithms, and algorithms are
+ Data structures are implemented with algorithms, and algorithms are
   implemented with data structures. It's data structures and algorithms all
   the way down until you reach the micro-scopic people with punch cards that
   control the computer (Yeah– Intel is enslaving super tiny people. Wake up
   sheeple!)
  
-  Any given task can be implemented in an infinite number of ways. So for
+ Any given task can be implemented in an infinite number of ways. So for
   common tasks there are often many different algorithms that people have come up
   with.
  
-  For example, there are an absurd number of algorithms for sorting a set of
+ For example, there are an absurd number of algorithms for sorting a set of
   unordered items:
  
       Insertion Sort, Selection Sort, Merge Sort, Bubble Sort, Heap Sort,
       Quick Sort, Shell Sort, Timsort, Bucket Sort, Radix Sort, ...
  
-  Some of these are significantly faster than others. Some use less memory.
+ Some of these are significantly faster than others. Some use less memory.
   Some are easy to implement. Some are based on assumptions about the dataset.
  
-  Every single one of them will be better for *something*. So you'll need to
+ Every single one of them will be better for *something*. So you'll need to
   make a decision based on what your needs are and for that you'll need a way
   of comparing them, a way to measure them.
  
-  When we compare the performance of algorithms we use a rough measurement of
+ When we compare the performance of algorithms we use a rough measurement of
   their average and worst-case performance using something called "Big-O".
  */
 
@@ -108,11 +86,11 @@ import Foundation
 
 /*:
  Big-O Notation is a way of roughly measuring the performance of algorithms
- in order to compare one against another when discussing them.
+  in order to compare one against another when discussing them.
 
  Big-O is a mathematical notation that we borrowed in computer science to
- classify algorithms by how they respond to the number (N) of items that you
- give them.
+  classify algorithms by how they respond to the number (N) of items that you
+  give them.
 
  There are two primary things that you measure with Big-O:
 
@@ -123,9 +101,9 @@ import Foundation
    while running given a set of items.
 
  We measure these independently from one another because while an algorithm
- may perform less operations than another, it may also take up way more
- memory. Depending on what your requirements are, one may be a better choice
- than the other.
+  may perform less operations than another, it may also take up way more
+  memory. Depending on what your requirements are, one may be a better choice
+  than the other.
 
  These are some common Big-O's:
 
@@ -140,7 +118,7 @@ import Foundation
      Factorial      O(N!)        WTF
 
  To give you an idea of how many operations we're talking about. Let's look
- at what these would equal given the (N) number of items.
+  at what these would equal given the (N) number of items.
 
                 N = 5            10             20             30
      -----------------------------------------------------------------------
@@ -153,13 +131,13 @@ import Foundation
      O(N!)          120          3,628,800      2,432,902,0... 265,252,859,812,191,058,636,308,480,000,000
 
  As you can see, even for relatively small sets of data you could do a *lot*
- of extra work.
+  of extra work.
 
  With data structures, you can perform 4 primary types of actions:
- Accessing, Searching, Inserting, and Deleting.
+  Accessing, Searching, Inserting, and Deleting.
 
  It is important to note that data structures may be good at one action but
- bad at another.
+  bad at another.
 
                             Accessing    Searching    Inserting    Deleting
     -------------------------------------------------------------------------
@@ -176,12 +154,12 @@ import Foundation
      Binary Search Tree     GREAT!       GREAT!       GREAT!       GREAT!
 
  Even further, some actions will have a different "average" performance and a
- "worst case scenario" performance.
+  "worst case scenario" performance.
 
  There is no perfect data structure, and you choose one over another based on
- the data that you are working with and the things you are going to do with
- it. This is why it is important to know a number of different common data
- structures so that you can choose from them.
+  the data that you are working with and the things you are going to do with
+  it. This is why it is important to know a number of different common data
+  structures so that you can choose from them.
  */
 
 /*** ===================================================================== ***\
